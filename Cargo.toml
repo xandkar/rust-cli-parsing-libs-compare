@@ -1,0 +1,12 @@
+[workspace.package]
+version = "0.1.0"
+authors = ["Siraaj Khandkar <siraaj@khandkar.net>"]
+license = "MIT"
+edition = "2021"
+
+[workspace]
+members = [
+    "pkgs/argh",
+    "pkgs/clap",
+]
+resolver = "2"
