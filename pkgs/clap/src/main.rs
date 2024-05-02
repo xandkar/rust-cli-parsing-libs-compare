@@ -4,7 +4,7 @@ use clap::Parser;
 /// Reach new heights.
 struct Cli {
     /// whether or not to jump
-    #[clap(short = 'j')]
+    #[clap(short = 'j', long)]
     jump: bool,
 
     /// how high to go
