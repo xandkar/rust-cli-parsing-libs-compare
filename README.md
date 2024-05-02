@@ -4,10 +4,12 @@ Compare Rust CLI parsing libs
 Executable binary size
 -------------------------------------------------------------------------------
 
-    448K  with-argh  release
-    1.1M  with-clap  release
-    4.5M  with-argh  debug
-    14M   with-clap  debug
+| size | crate     | profile |
+|------|-----------|---------|
+| 448K | with-argh | release |
+| 1.1M | with-clap | release |
+| 4.5M | with-argh | debug   |
+| 14M  | with-clap | debug   |
 
 Help
 -------------------------------------------------------------------------------
