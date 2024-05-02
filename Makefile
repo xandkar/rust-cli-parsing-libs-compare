@@ -13,7 +13,7 @@ build:
 
 .PHONY: compare
 compare:
-	@find target -mindepth 2 -maxdepth 2 -executable -type f -exec ls -sh '{}' \; | sort -k 1 -h | sed 's/\// /g' | awk '{print $$1, $$4, $$3}' | column -t
+	@find target -mindepth 2 -maxdepth 2 -executable -type f -exec ls -sh '{}' \; | sort -k 1 -h | sed 's/\// /g' | awk 'BEGIN {print "size", "crate", "profile"} {print $$1, $$4, $$3}' | column -t
 
 .PHONY: clean
 clean:
